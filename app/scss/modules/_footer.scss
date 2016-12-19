@@ -1,0 +1,52 @@
+.footer {
+  padding: 3rem;
+  background: $marron-dark;
+
+  h4 {
+    color: $marron-intermedio;
+  }
+  .contact-info {
+    padding-left: 5rem;
+  }
+
+  .subfoot {
+    img {
+      margin-bottom: 3rem;    
+    }
+  }
+
+  .contact {
+    li {
+      color: $blanco;
+      margin-bottom: 2rem;
+      font-size: 1.6rem;
+
+      &::before {
+        font-family: 'FontAwesome';
+        color: $marron-intermedio;
+        font-size: 1.8rem;
+        position: absolute;
+        top: 0;
+        left: -3rem;
+      }
+      &:nth-child(1) {
+          position: relative;
+        &::before {
+          content: '\f041';
+        }
+      }
+      &:nth-child(2) {
+          position: relative;
+        &::before {
+          content: '\f003';
+        }
+      }
+      &:nth-child(3) {
+          position: relative;
+        &::before {
+          content: '\f095';
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,260 @@
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  padding: 0.9rem 0;
+  background-color: #5B391D;
+}
+
+.navbar-brand {
+  height: auto;
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar-brand {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    padding: 0;
+  }
+}
+
+.navbar-nav li a {
+  font-family: "Montserrat", "Open Sans", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar-nav li a {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-nav li a {
+    margin: 1.2rem;
+    padding: 1.2rem;
+  }
+}
+
+.navbar-toggle {
+  background-color: #AA7248;
+  margin-top: 1.8rem;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.headline--h2 {
+  font-size: 3.6rem;
+  color: #5B391D;
+  text-transform: uppercase;
+}
+
+.headline--h2 small {
+  font-size: 1.8rem;
+  color: #AA7248;
+}
+
+.parrafo-gris {
+  color: #777;
+}
+
+.parrafo-blanco {
+  color: #fff;
+}
+
+.parrafo-marron-intermedio {
+  color: #aa7248;
+}
+
+.section--full-height {
+  height: 100%;
+  padding-top: 15rem;
+}
+
+.section-intro {
+  padding-top: 0;
+}
+
+.section-intro .video-container {
+  background-image: url("../images/backgrounds/video-example.png");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.section-conglomerado {
+  padding-top: 0 !important;
+  height: 60%;
+  min-height: 45rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.section-conglomerado .lead {
+  margin-top: -15rem;
+}
+
+@media only screen and (min-width: 320px) {
+  .section-conglomerado {
+    height: 48%;
+  }
+  .section-conglomerado .lead {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .section-conglomerado {
+    height: 35%;
+  }
+  .section-conglomerado .lead {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section-conglomerado {
+    height: 50%;
+  }
+  .section-conglomerado .lead {
+    margin-top: -15rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .section-conglomerado {
+    height: 50%;
+  }
+  .section-conglomerado .lead {
+    margin-top: 20rem;
+  }
+}
+
+.section-puertas {
+  padding-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-panama {
+  position: relative;
+  height: 20%;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.section-panama .lead {
+  font-size: 1.8rem;
+  padding: 8.6rem 0;
+  margin: 0;
+}
+
+.section-features {
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.section-features .img-left {
+  margin-left: -1.5rem;
+}
+
+.section-features ul {
+  max-width: 45.5rem;
+  margin-left: 5rem;
+  margin-top: 6.5rem;
+}
+
+.section-features ul li {
+  font-size: 1.8rem;
+  color: #777;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.section-features ul li::before {
+  content: '\f05d';
+  font-family: 'FontAwesome';
+  position: absolute;
+  top: 0;
+  left: -5rem;
+  color: #AA7248;
+}
+
+.section-maderas {
+  background-color: #ccc;
+}
+
+.bg-image {
+  top: 0;
+  position: absolute;
+}
+
+.footer {
+  padding: 3rem;
+  background: #332214;
+}
+
+.footer h4 {
+  color: #aa7248;
+}
+
+.footer .contact-info {
+  padding-left: 5rem;
+}
+
+.footer .subfoot img {
+  margin-bottom: 3rem;
+}
+
+.footer .contact li {
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.footer .contact li::before {
+  font-family: 'FontAwesome';
+  color: #aa7248;
+  font-size: 1.8rem;
+  position: absolute;
+  top: 0;
+  left: -3rem;
+}
+
+.footer .contact li:nth-child(1) {
+  position: relative;
+}
+
+.footer .contact li:nth-child(1)::before {
+  content: '\f041';
+}
+
+.footer .contact li:nth-child(2) {
+  position: relative;
+}
+
+.footer .contact li:nth-child(2)::before {
+  content: '\f003';
+}
+
+.footer .contact li:nth-child(3) {
+  position: relative;
+}
+
+.footer .contact li:nth-child(3)::before {
+  content: '\f095';
+}

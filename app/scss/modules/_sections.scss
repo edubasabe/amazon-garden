@@ -1,0 +1,116 @@
+.section {
+
+    &--full-height {
+        height: 100%;
+        padding-top: 15rem;
+    }
+
+    &-intro {
+        padding-top: 0;
+
+        .video-container {
+            background-image: url('../images/backgrounds/video-example.png');
+            background-size: cover;
+            min-height: 100vh;
+        }
+    }
+
+    &-conglomerado {
+        padding-top: 0 !important;
+        height: 60%;
+        min-height: 45rem;
+        background-color: #fff;
+        position: relative;
+
+        .lead {
+            margin-top: -15rem;
+        }
+        @include xxs-device {
+            height: 48%;
+
+            .lead {
+                margin-top: 0;
+            }
+        }
+        @include xs-device {
+            height: 35%;
+
+            .lead {
+                margin-top: 0;
+            }
+        }
+        @include sm-device {
+            height: 50%;
+
+            .lead {
+                margin-top: -15rem;
+            }
+        }
+        @include md-device {
+            height: 50%;
+
+            .lead {
+                margin-top: 20rem;
+            }
+        }
+    }
+
+    &-puertas {
+        padding-top: 0;
+        position: relative;
+        // border: 1px solid red;
+        overflow: hidden;
+    }
+
+    &-panama {
+        position: relative;
+        height: 20%;
+        background-color: #ccc;
+        // border: 1px solid blue;
+        overflow: hidden;
+
+        .lead {
+          font-size: 1.8rem;
+          padding: 8.6rem 0;
+          margin: 0;
+        }
+    }
+
+    &-features {
+      border-top: 1px solid #f2f2f2;
+      border-bottom: 1px solid #f2f2f2;
+      .img-left {
+        margin-left: -1.5rem;
+      }
+      ul {
+        max-width: 45.5rem;
+        margin-left: 5rem;
+        margin-top: 6.5rem;
+        li {
+          font-size: 1.8rem;
+          color: $gris;
+          margin-bottom: 2rem;
+          position: relative;
+
+          &::before {
+            content: '\f05d';
+            font-family: 'FontAwesome';
+            position: absolute;
+            top: 0;
+            left: -5rem;
+            color: $marron-claro;
+          }
+        }
+      }
+
+    }
+
+    &-maderas {
+        background-color: #ccc;
+    }
+}
+
+.bg-image {
+    top: 0;
+    position: absolute;
+}
