@@ -1,5 +1,13 @@
 .header {
   .video-container {
+    background: $verde-black;
+    // background-image: url('../images/backgrounds/video-example.png');
+    background-size: cover;
     display: flex;
+    // min-height: 90vh;
+
+    video {
+      margin: auto;
+    }
   }
 }

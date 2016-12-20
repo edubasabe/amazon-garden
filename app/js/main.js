@@ -7,15 +7,15 @@ function xsDevice() {
 }
 
 //-- Alto de Imagen a la seccion
-function heightToSection(sectionId) {
-  var sectionBgImage = $(sectionId + ' .bg-image').height();
-  console.log(sectionBgImage);
-      if (!xsDevice()) {
-        $(sectionId).css('height', sectionBgImage + 'px');
-      }
-}
+// function heightToSection(sectionId) {
+//   var sectionBgImage = $(sectionId + ' .bg-image').height();
+//   console.log(sectionBgImage);
+//       if (!xsDevice()) {
+//         $(sectionId).css('height', sectionBgImage + 'px');
+//       }
+// }
 
-
-
-heightToSection('#puertas');
-heightToSection('#panama');
+// 
+//
+// heightToSection('#puertas');
+// heightToSection('#panama');

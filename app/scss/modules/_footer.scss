@@ -1,52 +1,89 @@
 .footer {
+  background: $verde-footer;
   padding: 3rem;
-  background: $marron-dark;
 
-  h4 {
-    color: $marron-intermedio;
-  }
-  .contact-info {
-    padding-left: 5rem;
+  &__headline {
+    color: $blanco;
+    font-family: $clan;
+    font-size: 2rem;
+    text-transform: uppercase;
   }
 
-  .subfoot {
+  &__brand {
     img {
-      margin-bottom: 3rem;    
+      margin-bottom: 3rem;
     }
   }
 
-  .contact {
+  &__nav {
+    li {
+      margin-bottom: 2rem;
+
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__contact-info {
+    padding-left: 5rem;
+
     li {
       color: $blanco;
+      font-size: 1.8rem;
       margin-bottom: 2rem;
-      font-size: 1.6rem;
 
       &::before {
+        color: $verde;
         font-family: 'FontAwesome';
-        color: $marron-intermedio;
         font-size: 1.8rem;
+        left: -3rem;
         position: absolute;
         top: 0;
-        left: -3rem;
       }
+
       &:nth-child(1) {
           position: relative;
+
         &::before {
           content: '\f041';
         }
       }
+
       &:nth-child(2) {
           position: relative;
+
         &::before {
           content: '\f003';
         }
       }
+
       &:nth-child(3) {
           position: relative;
+
         &::before {
           content: '\f095';
         }
       }
     }
   }
+
+  a,
+  p {
+    color: $verde-texto;
+    text-decoration: none;
+  }
+}
+
+.underfooter {
+  background-color: $verde-underfooter;
+  padding: 2rem;
+
+    span {
+      color: $verde-texto;
+
+      a {
+        color: $verde-texto;
+      }
+    }
 }
