@@ -15,5 +15,7 @@ function heightToSection(sectionId) {
       }
 }
 
+
+
 heightToSection('#puertas');
 heightToSection('#panama');

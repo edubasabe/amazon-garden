@@ -1,12 +1,12 @@
 .headline {
   &--h2 {
+    color: $verde-obscuro;
     font-size: 3.6rem;
-    color: $marron-obscuro;
     text-transform: uppercase;
 
     small {
       font-size: 1.8rem;
-      color: $marron-claro;
+      // color: $verde-claro;
     }
   }
 }
@@ -15,10 +15,12 @@
   &-gris {
     color: $gris;
   }
+
   &-blanco {
     color: $blanco;
   }
-  &-marron-intermedio {
-    color: $marron-intermedio;
+
+  &-verde-intermedio {
+    // color: $verde-intermedio;
   }
 }

@@ -1,26 +1,33 @@
 .navbar {
-    padding: 0.9rem 0;
-    background-color: $marron-obscuro;
+  background-color: $marron-dark;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 
     &-brand {
         height: auto;
+        margin: 2.8rem 0;
         @include xxs-device {
-            transform: scale(.7);
-            padding: 0;
+          padding: 0;
+          transform: scale(.7);
+        }
+        @include sm-device {
+          padding: 0;
+          transform: none;
         }
     }
 
     &-nav {
         li {
             a {
-                font-family: $montserrat;
-                text-transform: uppercase;
-                font-size: 1.8rem;
-                color: $blanco;
+              color: $blanco;
+              font-family: $clan;
+              font-size: 1.8rem;
+              text-transform: uppercase;
 
                 @include xxs-device {
-                    margin: 0.5rem;
-                    padding: 0.5rem;
+                    margin: .5rem;
+                    padding: .5rem;
                 }
 
                 @include sm-device {
@@ -39,4 +46,56 @@
             background-color: $blanco;
         }
     }
+
+    &-primary {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &-secondary {
+      background-color: $verde-obscuro;
+      border-width: 0;
+      margin: 0;
+      min-height: auto;
+      padding: 0;
+
+      .navbar-nav {
+        li {
+          a {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    &-collapse {
+      position: relative;
+    }
+}
+
+#navbar-primary {
+  align-items: center;
+  height: 17.8rem;
+
+  @include xxs-device {
+      display: none;
+      overflow: hidden;
+  }
+
+  @include sm-device {
+    display: flex;
+  }
+}
+
+#navbar-secondary {
+  display: flex;
+  @include xxs-device {
+      display: none;
+      overflow: hidden;
+  }
+
+  @include sm-device {
+    display: flex;
+  }
 }

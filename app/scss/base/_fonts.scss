@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Clan';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ClanOT-NarrNews.eot'),
+       url('../fonts/ClanOT-NarrNews.woff2') format('woff2'),
+       url('../fonts/ClanOT-NarrNews.woff') format('woff'),
+       url('../fonts/ClanOT-NarrNews.ttf') format('truetype'),
+       url('../fonts/ClanOT-NarrNews.svg#ClanOT-NarrNews') format('svg'),
+       url('../fonts/ClanOT-NarrNews.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Clan-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ClanOT-NarrNewsItalic.eot'),
+       url('../fonts/ClanOT-NarrNewsItalic.woff2') format('woff2'),
+       url('../fonts/ClanOT-NarrNewsItalic.woff') format('woff'),
+       url('../fonts/ClanOT-NarrNewsItalic.ttf') format('truetype'),
+       url('../fonts/ClanOT-NarrNewsItalic.svg#ClanOT-NarrNewsItalic') format('svg'),
+       url('../fonts/ClanOT-NarrNewsItalic.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Clan-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/ClanOT-NarrBold.eot'),
+       url('../fonts/ClanOT-NarrBold.woff2') format('woff2'),
+       url('../fonts/ClanOT-NarrBold.woff') format('woff'),
+       url('../fonts/ClanOT-NarrBold.ttf') format('truetype'),
+       url('../fonts/ClanOT-NarrBold.svg#ClanOT-NarrBold') format('svg'),
+       url('../fonts/ClanOT-NarrBold.eot?#iefix') format('embedded-opentype');
+}
+
+
+$clan: 'Clan', Helvetica, sans-serif;
+$clan-light: 'Clan-Italic', Helvetica, sans-serif;
+$clan-bold: 'Clan-Bold', Helvetica, sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $clan-bold;
+}
+
+input,
+p {
+  font-family: $clan;
+}
