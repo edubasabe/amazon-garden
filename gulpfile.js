@@ -21,7 +21,7 @@ var sassOptions = {
 gulp.task('browserSync', function() {
   browserSync.init({
      server: {
-       baseDir: 'app'
+       baseDir: 'dist'
      },
     // proxy: 'localhost:8888/muh/app/'
   });
