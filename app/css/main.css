@@ -171,7 +171,7 @@ body {
 }
 
 .navbar-nav li a:active, .navbar-nav li a:focus, .navbar-nav li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar-toggle {
@@ -315,6 +315,7 @@ body {
 .headline--h2 {
   color: #fff;
   font-size: 3.6rem;
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 320px) {
@@ -368,7 +369,7 @@ body {
 }
 
 .section--padding {
-  padding: 4rem 0;
+  padding: 2.5rem 0;
 }
 
 .section--programas {
@@ -388,7 +389,7 @@ body {
 @media only screen and (min-width: 320px) {
   .section--programas .hero-feature {
     margin: 0 auto;
-    max-width: 35rem;
+    max-width: 36rem;
   }
 }
 
@@ -435,6 +436,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
   display: block;
+  max-width: 80%;
   overflow: hidden;
 }
 
@@ -664,7 +666,6 @@ body {
 
 .underfooter span {
   color: #929974;
-  width: 100%;
   word-wrap: break-word;
 }
 
