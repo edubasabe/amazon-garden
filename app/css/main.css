@@ -469,14 +469,14 @@ body {
 
 @media only screen and (min-width: 320px) {
   .section--testimonios {
-    background: #363d18 url("../images/backgrounds/testimonios-responsive.jpg") no-repeat right bottom;
+    background: #363d18 url("../images/backgrounds/testimonios-responsive.jpg") no-repeat top right;
     background-size: cover;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .section--testimonios {
-    background: #363d18 url("../images/backgrounds/testimonios-bg.jpg") no-repeat right;
+    background: #363d18 url("../images/backgrounds/testimonios-bg.jpg") no-repeat top right;
     background-size: cover;
   }
 }

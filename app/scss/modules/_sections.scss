@@ -103,11 +103,11 @@
         background: $verde-dark url('../images/backgrounds/testimonios-bg.jpg') no-repeat right;
         background-size: cover;
         @include xxs-device {
-            background: $verde-dark url('../images/backgrounds/testimonios-responsive.jpg') no-repeat right bottom;
+            background: $verde-dark url('../images/backgrounds/testimonios-responsive.jpg') no-repeat top right;
             background-size: cover;
         }
         @include sm-device {
-            background: $verde-dark url('../images/backgrounds/testimonios-bg.jpg') no-repeat right;
+            background: $verde-dark url('../images/backgrounds/testimonios-bg.jpg') no-repeat top right;
             background-size: cover;
         }
 
