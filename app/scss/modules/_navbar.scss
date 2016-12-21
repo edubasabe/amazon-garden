@@ -88,31 +88,51 @@
 
     &-collapse {
       position: relative;
+
+      .navbar-collapse {
+
+        .in {
+          display: flex;
+          overflow-y: auto;
+        }
+      }
     }
+
+
 }
 
 #navbar-primary {
   align-items: center;
-  height: 17.8rem;
 
   @include xxs-device {
-      display: none;
-      overflow: hidden;
+    height: auto;
   }
 
   @include sm-device {
-    display: flex;
+    min-height: 17.8rem;   
   }
 }
 
 #navbar-secondary {
   display: flex;
+
   @include xxs-device {
-      display: none;
-      overflow: hidden;
+    .navbar-nav {
+      li {
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+  @include sm-device {
+    .navbar-nav {
+      li {
+        &:first-child {
+          display: block;
+        }
+      }
+    }
   }
 
-  @include sm-device {
-    display: flex;
   }
 }
