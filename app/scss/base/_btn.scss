@@ -4,5 +4,12 @@
       border: 1px solid rgba(126, 169, 45, 1);
       font-family: $clan-bold;
       text-transform: uppercase;
+
+      &:hover,
+      &:active,
+      &:focus {
+        border: 1px solid rgba(126, 169, 45, 1);
+      }
     }
+
 }

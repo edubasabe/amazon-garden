@@ -41,6 +41,10 @@ p {
   text-transform: uppercase;
 }
 
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+  border: 1px solid #7ea92d;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   font-family: "Clan", Helvetica, sans-serif;
@@ -206,6 +210,9 @@ body {
 }
 
 .header .video-container video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: auto;
 }
 
@@ -257,8 +264,38 @@ body {
   color: #fff;
 }
 
+.section--programas .thumbnail {
+  border: 0;
+  padding: 0;
+}
+
+.section--programas__item-image {
+  border-radius: .4rem .4rem 0 0;
+  max-height: 16.7rem;
+  overflow: hidden;
+}
+
+.section--programas .caption h4 {
+  color: #4f5a23;
+  font-family: "Clan", Helvetica, sans-serif;
+  font-size: 1.6rem;
+  margin: .5rem 0;
+}
+
+.section--programas .caption h3 {
+  color: #4f5a23;
+  font-family: "Clan", Helvetica, sans-serif;
+  font-size: 2.8rem;
+  margin: 0 0 .5rem;
+  text-transform: uppercase;
+}
+
+.section--programas .caption p {
+  color: #929974;
+}
+
 .section--instalaciones {
-  background: #4f5a23;
+  background: #4f5a23 url("../images/backgrounds/instalaciones-bg.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -267,7 +304,8 @@ body {
 }
 
 .section--testimonios {
-  background: #363d18;
+  background: #363d18 url("../images/backgrounds/testimonios-bg.jpg") no-repeat right;
+  background-size: cover;
 }
 
 .section--testimonios__texto-container {
@@ -278,7 +316,6 @@ body {
 
 .section--testimonios__texto {
   color: #929974;
-  max-width: 40rem;
 }
 
 .section--testimonios__author {
@@ -292,6 +329,14 @@ body {
   margin: 0;
 }
 
+.owl-carousel .owl-dot span {
+  background: #4f5a23 !important;
+}
+
+.owl-carousel .owl-dot.active span {
+  background: #aec45f !important;
+}
+
 .footer {
   background: #35360d;
   padding: 3rem;
@@ -301,6 +346,7 @@ body {
   color: #fff;
   font-family: "Clan", Helvetica, sans-serif;
   font-size: 2rem;
+  margin-bottom: 2.5rem;
   text-transform: uppercase;
 }
 

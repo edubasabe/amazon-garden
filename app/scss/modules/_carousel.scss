@@ -1,0 +1,13 @@
+.owl-carousel {
+  .owl-dot {
+    span {
+      background: $verde-obscuro!important;
+    }
+  }
+
+  .owl-dot.active {
+    span {
+      background: $verde!important;
+    }
+  }
+}
