@@ -1,6 +1,7 @@
 .footer {
   background: $verde-footer;
-  padding: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 
   &__headline {
     color: $blanco;
@@ -13,6 +14,24 @@
   &__brand {
     img {
       margin-bottom: 3rem;
+
+      @include xxs-device {
+        margin: 0 auto;
+      }
+
+      @include sm-device {
+        margin: inherit;
+      }
+    }
+
+    p {
+      @include xxs-device {
+        text-align: center;
+      }
+
+      @include sm-device {
+        text-align: left;
+      }
     }
   }
 
@@ -29,10 +48,28 @@
   &__contact-info {
     padding-left: 5rem;
 
+    @include xxs-device {
+      padding-left: 4rem;
+    }
+
     li {
       color: $blanco;
       font-size: 1.8rem;
       margin-bottom: 2rem;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          word-wrap: break-word;
+
+          @include xxs-device {
+            font-size: 1.6rem;
+          }
+
+          @include sm-device {
+            font-size: inherit;
+          }
+        }
 
       &::before {
         color: $verde;
@@ -82,6 +119,8 @@
 
     span {
       color: $verde-texto;
+      width: 100%;
+      word-wrap: break-word;
 
       a {
         color: $verde-texto;

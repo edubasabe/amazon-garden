@@ -2,17 +2,23 @@
   &--h2 {
     color: $blanco;
     font-size: 3.6rem;
-    // text-transform: uppercase;
 
-    small {
-      font-size: 1.8rem;
-      // color: $verde-claro;
+    @include xxs-device {
+      font-size: 2.4rem;
     }
   }
 
   &--underline {
     margin-bottom: 4rem;
     position: relative;
+
+    @include xxs-device {
+      margin-bottom: 6rem;
+    }
+
+    @include sm-device {
+      margin-bottom: 4rem;
+    }
 
     &::after {
       background: $verde;
@@ -24,6 +30,10 @@
       position: absolute;
       transform: translateX(-50%);
       width: 5%;
+    }
+
+    @include xxs-device {
+      bottom: -1rem;
     }
   }
 }

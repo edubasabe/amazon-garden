@@ -1,138 +1,201 @@
 .navbar {
-  background: $marron-dark url('../images/backgrounds/HeaderBG.png') no-repeat center center;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-  padding: 0;
+    background: $marron-dark url('../images/backgrounds/HeaderBG.png') no-repeat center center;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    @include xxs-device {
+        background: $marron-dark;
+    }
+    @include sm-device {
+        background: $marron-dark url('../images/backgrounds/HeaderBG.png') no-repeat center center;
+    }
+
+
+    &-header {
+        @include xxs-device {
+            background: $marron-dark url('../images/backgrounds/HeaderBG.png') no-repeat center center;
+            display: block;
+        }
+        @include sm-device {
+            background: $marron-dark;
+        }
+    }
 
     &-brand {
         height: auto;
         margin: 2.8rem 0;
+
         @include xxs-device {
-          padding: 0;
-          transform: scale(.7);
+            margin: 0;
+            padding-left: 1.5rem;
+            // transform: scale(.7);
         }
         @include sm-device {
-          padding: 0;
-          transform: none;
+            margin: 2.8rem 0;
+            padding: 0;
+            transform: none;
+        }
+
+        &-logo {
+
+          @include xxs-device {
+            max-height: 8rem;
+          }
+
+          @include sm-device {
+            max-height: none;
+          }
         }
     }
 
     &-nav {
+
+        @include xxs-device {
+          // padding: 0 15px;
+        }
+
         li {
             a {
-              color: $blanco;
-              font-family: $clan;
-              font-size: 2rem;
-              text-transform: uppercase;
+                color: $blanco;
+                font-family: $clan;
+                font-size: 1.6rem;
+                text-transform: uppercase;
 
                 @include xxs-device {
                     margin: .5rem;
                     padding: .5rem;
                 }
 
+                @include xs-device {
+                  margin: .2rem;
+                  padding: .2rem;
+                }
+
                 @include sm-device {
+                    margin: .7rem;
+                    padding: .7rem;
+                }
+                @include md-device {
+                    margin: 1.2rem;
+                    padding: 1.2rem;
+                }
+                @include lg-device {
                     margin: 1.2rem;
                     padding: 1.2rem;
                 }
 
-              &:hover,
-              &:active,
-              &:focus {
-                background-color: rgba($blanco, .1);
-              }
+                &:active,
+                &:focus,
+                &:hover {
+                    background-color: rgba($blanco, .1);
+                }
             }
         }
     }
 
     &-toggle {
-        background-color: $marron-claro;
+        background-color: $verde-obscuro;
         margin-top: 1.8rem;
 
         .icon-bar {
             background-color: $blanco;
         }
+
+        @include xxs-device {
+          margin: 3.8rem 1.5rem 3.8rem 0;
+        }
     }
 
     &-primary {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     &-secondary {
-      background: $verde-obscuro;
-      border-width: 0;
-      margin: 0;
-      min-height: auto;
-      padding: 0;
+        background: $verde-obscuro;
+        border-width: 0;
+        margin: 0;
+        min-height: auto;
+        padding: 0;
 
-      .navbar-nav {
-        li {
-          &:first-child {
-            background: $verde-dark;
+        .navbar-nav {
+            li {
+                &:first-child {
+                    background: $verde-dark;
 
-            a {
-              margin: 1.2rem 3rem;
+                    a {
+                        margin: 1.2rem 3rem;
+                    }
+                }
+
+                a {
+                    color: $verde-claro;
+                    margin: 1.2rem 2.8rem;
+                    padding: 0;
+
+                    @include xs-device {
+                      margin: 1rem 2rem;
+                    }
+                }
             }
-          }
-
-          a {
-            color: $verde-claro;
-            margin: 1.2rem 2.8rem;
-            padding: 0;
-          }
         }
-      }
     }
 
     &-collapse {
-      position: relative;
+        position: relative;
 
-      .navbar-collapse {
-
-        .in {
-          display: flex;
-          overflow-y: auto;
+        .navbar-collapse {
+            .in {
+                display: flex;
+                overflow-y: auto;
+            }
         }
-      }
     }
-
-
 }
 
 #navbar-primary {
-  align-items: center;
+    align-items: center;
 
-  @include xxs-device {
-    height: auto;
-  }
+    @include xxs-device {
+        height: auto;
+        padding-bottom: 15px;
+    }
 
-  @include sm-device {
-    min-height: 17.8rem;   
-  }
+    @include sm-device {
+        min-height: 17.8rem;
+        padding-bottom: 0;
+    }
+
+    hr {
+      border-top-color: rgba($blanco, .1);
+    }
 }
 
 #navbar-secondary {
-  display: flex;
+    display: flex;
+    @include xxs-device {
+        display: none;
 
-  @include xxs-device {
-    .navbar-nav {
-      li {
-        &:first-child {
-          display: none;
+        .navbar-nav {
+            li {
+                &:first-child {
+                    display: none;
+                }
+            }
         }
-      }
-    }
-  @include sm-device {
-    .navbar-nav {
-      li {
-        &:first-child {
-          display: block;
-        }
-      }
-    }
-  }
+        @include sm-device {
+            display: flex;
 
-  }
+            .navbar-nav {
+                li {
+                    &:first-child {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }

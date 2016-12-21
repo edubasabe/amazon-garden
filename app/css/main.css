@@ -70,6 +70,31 @@ body {
   padding: 0;
 }
 
+@media only screen and (min-width: 320px) {
+  .navbar {
+    background: #2e2208;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar {
+    background: #2e2208 url("../images/backgrounds/HeaderBG.png") no-repeat center center;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar-header {
+    background: #2e2208 url("../images/backgrounds/HeaderBG.png") no-repeat center center;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-header {
+    background: #2e2208;
+  }
+}
+
 .navbar-brand {
   height: auto;
   margin: 2.8rem 0;
@@ -77,24 +102,36 @@ body {
 
 @media only screen and (min-width: 320px) {
   .navbar-brand {
-    padding: 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    margin: 0;
+    padding-left: 1.5rem;
   }
 }
 
 @media only screen and (min-width: 769px) {
   .navbar-brand {
+    margin: 2.8rem 0;
     padding: 0;
     -webkit-transform: none;
             transform: none;
   }
 }
 
+@media only screen and (min-width: 320px) {
+  .navbar-brand-logo {
+    max-height: 8rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-brand-logo {
+    max-height: none;
+  }
+}
+
 .navbar-nav li a {
   color: #fff;
   font-family: "Clan", Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
 }
 
@@ -105,24 +142,51 @@ body {
   }
 }
 
+@media only screen and (min-width: 480px) {
+  .navbar-nav li a {
+    margin: .2rem;
+    padding: .2rem;
+  }
+}
+
 @media only screen and (min-width: 769px) {
+  .navbar-nav li a {
+    margin: .7rem;
+    padding: .7rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
   .navbar-nav li a {
     margin: 1.2rem;
     padding: 1.2rem;
   }
 }
 
-.navbar-nav li a:hover, .navbar-nav li a:active, .navbar-nav li a:focus {
+@media only screen and (min-width: 1200px) {
+  .navbar-nav li a {
+    margin: 1.2rem;
+    padding: 1.2rem;
+  }
+}
+
+.navbar-nav li a:active, .navbar-nav li a:focus, .navbar-nav li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .navbar-toggle {
-  background-color: #aa7248;
+  background-color: #4f5a23;
   margin-top: 1.8rem;
 }
 
 .navbar-toggle .icon-bar {
   background-color: #fff;
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar-toggle {
+    margin: 3.8rem 1.5rem 3.8rem 0;
+  }
 }
 
 .navbar-primary {
@@ -154,6 +218,12 @@ body {
   padding: 0;
 }
 
+@media only screen and (min-width: 480px) {
+  .navbar-secondary .navbar-nav li a {
+    margin: 1rem 2rem;
+  }
+}
+
 .navbar-collapse {
   position: relative;
 }
@@ -174,13 +244,19 @@ body {
 @media only screen and (min-width: 320px) {
   #navbar-primary {
     height: auto;
+    padding-bottom: 15px;
   }
 }
 
 @media only screen and (min-width: 769px) {
   #navbar-primary {
     min-height: 17.8rem;
+    padding-bottom: 0;
   }
+}
+
+#navbar-primary hr {
+  border-top-color: rgba(255, 255, 255, 0.1);
 }
 
 #navbar-secondary {
@@ -190,12 +266,20 @@ body {
 }
 
 @media only screen and (min-width: 320px) {
+  #navbar-secondary {
+    display: none;
+  }
   #navbar-secondary .navbar-nav li:first-child {
     display: none;
   }
 }
 
 @media only screen and (min-width: 320px) and (min-width: 769px) {
+  #navbar-secondary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   #navbar-secondary .navbar-nav li:first-child {
     display: block;
   }
@@ -213,7 +297,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: auto;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 320px) {
+  .header .video-container {
+    max-height: 23rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .header .video-container {
+    max-height: 72rem;
+  }
 }
 
 .headline--h2 {
@@ -221,13 +317,27 @@ body {
   font-size: 3.6rem;
 }
 
-.headline--h2 small {
-  font-size: 1.8rem;
+@media only screen and (min-width: 320px) {
+  .headline--h2 {
+    font-size: 2.4rem;
+  }
 }
 
 .headline--underline {
   margin-bottom: 4rem;
   position: relative;
+}
+
+@media only screen and (min-width: 320px) {
+  .headline--underline {
+    margin-bottom: 6rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .headline--underline {
+    margin-bottom: 4rem;
+  }
 }
 
 .headline--underline::after {
@@ -243,6 +353,12 @@ body {
   width: 5%;
 }
 
+@media only screen and (min-width: 320px) {
+  .headline--underline {
+    bottom: -1rem;
+  }
+}
+
 .parrafo-gris {
   color: #777;
 }
@@ -252,7 +368,7 @@ body {
 }
 
 .section--padding {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 .section--programas {
@@ -267,6 +383,13 @@ body {
 .section--programas .thumbnail {
   border: 0;
   padding: 0;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--programas .hero-feature {
+    margin: 0 auto;
+    max-width: 35rem;
+  }
 }
 
 .section--programas__item-image {
@@ -285,7 +408,7 @@ body {
 .section--programas .caption h3 {
   color: #4f5a23;
   font-family: "Clan", Helvetica, sans-serif;
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin: 0 0 .5rem;
   text-transform: uppercase;
 }
@@ -303,9 +426,57 @@ body {
   color: #fff;
 }
 
+.section--instalaciones__gallery .portfolio-item {
+  margin-bottom: 3rem;
+}
+
+.section--instalaciones__gallery .portfolio-item a {
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  display: block;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--instalaciones__gallery .portfolio-item a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--instalaciones__gallery .portfolio-item a {
+    max-width: 100%;
+  }
+}
+
+.section--instalaciones__gallery .portfolio-item a img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section--instalaciones__gallery .row:last-child .portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
 .section--testimonios {
   background: #363d18 url("../images/backgrounds/testimonios-bg.jpg") no-repeat right;
   background-size: cover;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--testimonios {
+    background: #363d18 url("../images/backgrounds/testimonios-responsive.jpg") no-repeat right bottom;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--testimonios {
+    background: #363d18 url("../images/backgrounds/testimonios-bg.jpg") no-repeat right;
+    background-size: cover;
+  }
 }
 
 .section--testimonios__texto-container {
@@ -314,8 +485,34 @@ body {
   max-width: 60%;
 }
 
+@media only screen and (min-width: 320px) {
+  .section--testimonios__texto-container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--testimonios__texto-container {
+    max-width: 60%;
+  }
+}
+
 .section--testimonios__texto {
   color: #929974;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--testimonios__texto {
+    background-color: rgba(54, 61, 24, 0.8);
+    padding: 2rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgba(54, 61, 24, 0.9);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--testimonios__texto {
+    background-color: rgba(54, 61, 24, 0);
+  }
 }
 
 .section--testimonios__author {
@@ -339,7 +536,8 @@ body {
 
 .footer {
   background: #35360d;
-  padding: 3rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .footer__headline {
@@ -354,6 +552,30 @@ body {
   margin-bottom: 3rem;
 }
 
+@media only screen and (min-width: 320px) {
+  .footer__brand img {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer__brand img {
+    margin: inherit;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .footer__brand p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer__brand p {
+    text-align: left;
+  }
+}
+
 .footer__nav li {
   margin-bottom: 2rem;
 }
@@ -366,10 +588,34 @@ body {
   padding-left: 5rem;
 }
 
+@media only screen and (min-width: 320px) {
+  .footer__contact-info {
+    padding-left: 4rem;
+  }
+}
+
 .footer__contact-info li {
   color: #fff;
   font-size: 1.8rem;
   margin-bottom: 2rem;
+}
+
+.footer__contact-info li a {
+  display: inline-block;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+@media only screen and (min-width: 320px) {
+  .footer__contact-info li a {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .footer__contact-info li a {
+    font-size: inherit;
+  }
 }
 
 .footer__contact-info li::before {
@@ -418,6 +664,8 @@ body {
 
 .underfooter span {
   color: #929974;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .underfooter span a {

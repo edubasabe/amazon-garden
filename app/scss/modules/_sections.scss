@@ -1,82 +1,149 @@
 .section {
     &--padding {
-      padding: 8rem 0;
+        padding: 4rem 0;
     }
 
     &--programas {
-      background: $marron-verdoso url('../images/backgrounds/programas-bg.jpg') no-repeat center;
-      background-size: cover;
+        background: $marron-verdoso url('../images/backgrounds/programas-bg.jpg') no-repeat center;
+        background-size: cover;
 
-      .lead {
-        color: $blanco;
-      }
-
-      .thumbnail {
-        border: 0;
-        padding: 0;
-      }
-
-      &__item-image {
-        border-radius: .4rem .4rem 0 0;
-        max-height: 16.7rem;
-        overflow: hidden;
-      }
-
-      .caption {
-        h4 {
-          color: $verde-obscuro;
-          font-family: $clan;
-          font-size: 1.6rem;
-          margin: .5rem 0;
+        .lead {
+            color: $blanco;
         }
 
-        h3 {
-          color: $verde-obscuro;
-          font-family: $clan;
-          font-size: 2.8rem;
-          margin: 0 0 .5rem;
-          text-transform: uppercase;
+        .thumbnail {
+            border: 0;
+            padding: 0;
         }
 
-        p {
-          color: $verde-texto;
+        .hero-feature {
+            @include xxs-device {
+                margin: 0 auto;
+                max-width: 35rem;
+            }
         }
-      }
+
+        &__item-image {
+            border-radius: .4rem .4rem 0 0;
+            max-height: 16.7rem;
+            overflow: hidden;
+        }
+
+        .caption {
+            h4 {
+                color: $verde-obscuro;
+                font-family: $clan;
+                font-size: 1.6rem;
+                margin: .5rem 0;
+            }
+
+            h3 {
+                color: $verde-obscuro;
+                font-family: $clan;
+                font-size: 2rem;
+                margin: 0 0 .5rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $verde-texto;
+            }
+        }
     }
 
     &--instalaciones {
-      background: $verde-obscuro url('../images/backgrounds/instalaciones-bg.jpg') no-repeat center;
-      background-size: cover;
+        background: $verde-obscuro url('../images/backgrounds/instalaciones-bg.jpg') no-repeat center;
+        background-size: cover;
 
-      .lead {
-        color: $blanco;
-      }
+        .lead {
+            color: $blanco;
+        }
+
+        &__gallery {
+            .portfolio-item {
+                margin-bottom: 3rem;
+
+                a {
+                    border: 1px solid rgba(255, 255, 255, .42);
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, .45);
+                    display: block;
+                    overflow: hidden;
+                    @include xxs-device {
+                        margin-left: auto;
+                        margin-right: auto;
+                        // max-width: 83%;
+                    }
+                    @include sm-device {
+                        max-width: 100%;
+                    }
+
+                    img {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+
+            .row {
+                &:last-child {
+                    .portfolio-item {
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &--testimonios {
-      background: $verde-dark url('../images/backgrounds/testimonios-bg.jpg') no-repeat right;
-      background-size: cover;
+        background: $verde-dark url('../images/backgrounds/testimonios-bg.jpg') no-repeat right;
+        background-size: cover;
+        @include xxs-device {
+            background: $verde-dark url('../images/backgrounds/testimonios-responsive.jpg') no-repeat right bottom;
+            background-size: cover;
+        }
+        @include sm-device {
+            background: $verde-dark url('../images/backgrounds/testimonios-bg.jpg') no-repeat right;
+            background-size: cover;
+        }
 
-      &__texto-container {
-        border: 0;
-        margin: auto;
-        max-width: 60%;
-      }
+        &__texto-container {
+            border: 0;
+            margin: auto;
+            max-width: 60%;
+            @include xxs-device {
+                max-width: 100%;
+                // background-color: rgba($verde-dark, .8);
+            }
+            @include sm-device {
+                max-width: 60%;
+            }
+        }
 
-      &__texto {
-        color: $verde-texto;
-        // max-width: 40rem;
-      }
+        &__texto {
+            color: $verde-texto;
+            @include xxs-device {
+                background-color: rgba($verde-dark, .8);
+                padding: 2rem;
+                text-shadow: .1rem .1rem .1rem rgba($verde-dark, .9);
+            }
+            @include sm-device {
+                background-color: rgba($verde-dark, 0);
+            }
+            // max-width: 40rem;
+        }
 
-      &__author {
-        color: $blanco;
-        font-size: 1.8rem;
-        margin-bottom: 0;
-      }
+        &__author {
+            color: $blanco;
+            font-size: 1.8rem;
+            margin-bottom: 0;
+        }
 
-      &__from {
-        color: $verde-texto;
-        margin: 0;
-      }
+        &__from {
+            color: $verde-texto;
+            margin: 0;
+        }
     }
-  }
+}
