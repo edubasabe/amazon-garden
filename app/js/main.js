@@ -50,6 +50,7 @@ if ( xsDevice() ) {
 
   navPrimaryNav.append( $('#navbar-secondary .navbar-nav > li') );
   $('#navbar-primary .navbar-nav li:nth-child(5)').html('<hr>');
+  $('.navbar-secondary').append( $('#navbar-primary button.btn.btn-primary') );
 
 }
 

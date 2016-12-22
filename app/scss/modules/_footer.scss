@@ -1,130 +1,144 @@
 .footer {
-  background: $verde-footer;
-  padding-bottom: 3rem;
-  padding-top: 3rem;
+    background: $verde-footer;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
 
-  &__headline {
-    color: $blanco;
-    font-family: $clan;
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
-    text-transform: uppercase;
-  }
-
-  &__brand {
-    img {
-      margin-bottom: 3rem;
-
-      @include xxs-device {
-        margin: 0 auto;
-      }
-
-      @include sm-device {
-        margin: inherit;
-      }
+    &__headline {
+        color: $blanco;
+        font-family: $clan;
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
     }
 
+    &__brand {
+        img {
+            @include xxs-device {
+                margin: 0 auto;
+            }
+            @include sm-device {
+                margin-bottom: 3rem;
+            }
+        }
+
+        p {
+            @include xxs-device {
+                text-align: center;
+            }
+            @include sm-device {
+                text-align: left;
+            }
+        }
+    }
+
+    &__nav {
+        li {
+            margin-bottom: 2rem;
+
+            a {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &__contact-info {
+        padding-left: 5rem;
+        @include xxs-device {
+            padding-left: 4rem;
+        }
+
+        li {
+            color: $blanco;
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+
+            a {
+                display: inline-block;
+                width: 100%;
+                word-wrap: break-word;
+                @include xxs-device {
+                    font-size: 1.6rem;
+                }
+                @include sm-device {
+                    font-size: inherit;
+                }
+            }
+
+            &::before {
+                color: $verde;
+                font-family: 'FontAwesome';
+                font-size: 1.8rem;
+                left: -3rem;
+                position: absolute;
+                top: 0;
+            }
+
+            &:nth-child(1) {
+                position: relative;
+
+                &::before {
+                    content: '\f041';
+                }
+            }
+
+            &:nth-child(2) {
+                position: relative;
+
+                &::before {
+                    content: '\f003';
+                }
+            }
+
+            &:nth-child(3) {
+                position: relative;
+
+                &::before {
+                    content: '\f095';
+                }
+            }
+        }
+    }
+
+    a,
     p {
-      @include xxs-device {
-        text-align: center;
-      }
-
-      @include sm-device {
-        text-align: left;
-      }
-    }
-  }
-
-  &__nav {
-    li {
-      margin-bottom: 2rem;
-
-      a {
-        font-size: 1.6rem;
-      }
-    }
-  }
-
-  &__contact-info {
-    padding-left: 5rem;
-
-    @include xxs-device {
-      padding-left: 4rem;
+        color: $verde-texto;
+        text-align: justify;
+        text-decoration: none;
     }
 
-    li {
-      color: $blanco;
-      font-size: 1.6rem;
-      margin-bottom: 2rem;
+    hr {
+        border-color: rgba($verde-texto, .3);
+    }
+
+    .icon-list {
+        li {
+            border: 1px solid $verde-texto;
+            border-radius: 3rem;
+            height: 4rem;
+            position: relative;
+            width: 4rem;
+        }
 
         a {
-          display: inline-block;
-          width: 100%;
-          word-wrap: break-word;
-
-          @include xxs-device {
-            font-size: 1.6rem;
-          }
-
-          @include sm-device {
-            font-size: inherit;
-          }
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
-
-      &::before {
-        color: $verde;
-        font-family: 'FontAwesome';
-        font-size: 1.8rem;
-        left: -3rem;
-        position: absolute;
-        top: 0;
-      }
-
-      &:nth-child(1) {
-          position: relative;
-
-        &::before {
-          content: '\f041';
-        }
-      }
-
-      &:nth-child(2) {
-          position: relative;
-
-        &::before {
-          content: '\f003';
-        }
-      }
-
-      &:nth-child(3) {
-          position: relative;
-
-        &::before {
-          content: '\f095';
-        }
-      }
     }
-  }
-
-  a,
-  p {
-    color: $verde-texto;
-    text-align: justify;
-    text-decoration: none;
-  }
 }
 
 .underfooter {
-  background-color: $verde-underfooter;
-  padding: 2rem;
+    background-color: $verde-underfooter;
+    padding: 2rem;
 
     span {
-      color: $verde-texto;
-      // width: 100%;
-      word-wrap: break-word;
-
-      a {
         color: $verde-texto;
-      }
+        // width: 100%;
+        word-wrap: break-word;
+
+        a {
+            color: $verde-texto;
+        }
     }
 }

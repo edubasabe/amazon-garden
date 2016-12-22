@@ -6,6 +6,12 @@
 
     @include xxs-device {
       font-size: 2.4rem;
+      margin-top: -1rem;
+    }
+
+    @include sm-device {
+      font-size: 3.6rem;
+      margin-top: 0;
     }
   }
 
@@ -14,7 +20,7 @@
     position: relative;
 
     @include xxs-device {
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
     }
 
     @include sm-device {

@@ -121,6 +121,18 @@
         min-height: auto;
         padding: 0;
 
+        @include xxs-device {
+          padding: .8rem;
+          text-align: center;
+
+          .btn-primary {
+            margin: 0 auto;
+            text-align: center;
+          }
+        }
+
+
+
         .navbar-nav {
             li {
                 &:first-child {
