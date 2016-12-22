@@ -536,6 +536,64 @@ body {
   background: #aec45f !important;
 }
 
+.section--quienes-somos {
+  background: #302a1d url("../images/backgrounds/selva-bg.png") no-repeat center;
+}
+
+.section--quienes-somos__image {
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: .5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--quienes-somos__image {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--quienes-somos__image {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .section--quienes-somos__texto {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--quienes-somos__texto {
+    margin-top: 3rem;
+  }
+}
+
+.section--quienes-somos__texto p {
+  color: #cfcfab;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.section--quienes-somos__texto blockquote {
+  border-color: #aec45f;
+  font-style: italic;
+}
+
+.section--quienes-somos__texto blockquote p {
+  font-size: 2rem;
+}
+
+.section--quienes-somos h3 {
+  color: #aec45f;
+  font-family: "Clan", Helvetica, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
 .footer {
   background: #35360d;
   padding-bottom: 3rem;

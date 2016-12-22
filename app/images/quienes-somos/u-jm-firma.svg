@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="470px" height="76px" viewBox="0 0 470 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Ursula &amp; Juan Miguel</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="485" height="91"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Quienes-Somos" sketch:type="MSArtboardGroup" transform="translate(-196.000000, -1206.000000)">
+            <g id="Ursula-&amp;-Juan-Miguel" sketch:type="MSLayerGroup" transform="translate(186.000000, 1195.000000)">
+                <mask id="mask-2" sketch:name="Mask" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <text sketch:type="MSTextLayer" mask="url(#mask-2)" font-family="Crunchy PERSONAL USE ONLY" font-size="72" font-weight="normal" fill="#CFCFAB">
+                    <tspan x="10" y="63">Ursula &amp; Juan Miguel</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
