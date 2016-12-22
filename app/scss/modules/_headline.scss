@@ -14,7 +14,7 @@
     position: relative;
 
     @include xxs-device {
-      margin-bottom: 6rem;
+      margin-bottom: 4rem;
     }
 
     @include sm-device {
@@ -23,7 +23,7 @@
 
     &::after {
       background: $verde;
-      bottom: -2rem;
+      bottom: -1rem;
       content: '';
       height: 2px;
       left: 50%;
