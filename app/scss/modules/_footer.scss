@@ -42,60 +42,64 @@
     }
 
     &__contact-info {
-        padding-left: 5rem;
-        @include xxs-device {
-            padding-left: 4rem;
-        }
+        .contact {
+          @include xxs-device {
+              padding-left: 4rem;
+          }
+          @include sm-device {
+              padding-left: 3rem;
+          }
 
-        li {
-            color: $blanco;
-            font-size: 1.6rem;
-            margin-bottom: 2rem;
+          li {
+              color: $blanco;
+              font-size: 1.6rem;
+              margin-bottom: 2rem;
 
-            a {
-                display: inline-block;
-                width: 100%;
-                word-wrap: break-word;
-                @include xxs-device {
-                    font-size: 1.6rem;
-                }
-                @include sm-device {
-                    font-size: inherit;
-                }
-            }
+              a {
+                  display: inline-block;
+                  width: 100%;
+                  word-wrap: break-word;
+                  @include xxs-device {
+                      font-size: 1.6rem;
+                  }
+                  @include sm-device {
+                      font-size: inherit;
+                  }
+              }
 
-            &::before {
-                color: $verde;
-                font-family: 'FontAwesome';
-                font-size: 1.8rem;
-                left: -3rem;
-                position: absolute;
-                top: 0;
-            }
+              &::before {
+                  color: $verde;
+                  font-family: 'FontAwesome';
+                  font-size: 1.8rem;
+                  left: -3rem;
+                  position: absolute;
+                  top: 0;
+              }
 
-            &:nth-child(1) {
-                position: relative;
+              &:nth-child(1) {
+                  position: relative;
 
-                &::before {
-                    content: '\f041';
-                }
-            }
+                  &::before {
+                      content: '\f041';
+                  }
+              }
 
-            &:nth-child(2) {
-                position: relative;
+              &:nth-child(2) {
+                  position: relative;
 
-                &::before {
-                    content: '\f003';
-                }
-            }
+                  &::before {
+                      content: '\f003';
+                  }
+              }
 
-            &:nth-child(3) {
-                position: relative;
+              &:nth-child(3) {
+                  position: relative;
 
-                &::before {
-                    content: '\f095';
-                }
-            }
+                  &::before {
+                      content: '\f095';
+                  }
+              }
+          }
         }
     }
 
@@ -111,6 +115,15 @@
     }
 
     .icon-list {
+      margin-left: 0;
+
+      @include xxs-device {
+        text-align: center;
+      }
+
+      @include sm-device {
+        text-align: left;
+      }
         li {
             border: 1px solid $verde-texto;
             border-radius: 3rem;
@@ -125,6 +138,15 @@
             top: 50%;
             transform: translate(-50%, -50%);
         }
+    }
+
+    .terminos {
+      @include xxs-device {
+          text-align: center;
+      }
+      @include sm-device {
+          text-align: left;
+      }
     }
 }
 

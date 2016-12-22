@@ -9,6 +9,7 @@
 
         .lead {
             color: $blanco;
+            font-size: 1.6rem;
         }
 
         .thumbnail {
@@ -57,6 +58,7 @@
 
         .lead {
             color: $blanco;
+            font-size: 1.6rem;
         }
 
         &__gallery {
@@ -133,6 +135,7 @@
             }
             @include sm-device {
                 background-color: rgba($verde-dark, 0);
+                padding: 0;
             }
             // max-width: 40rem;
         }
