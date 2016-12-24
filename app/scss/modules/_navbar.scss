@@ -57,6 +57,14 @@
         }
 
         li {
+          @include xxs-device {
+            width: 100%;
+          }
+
+          @include sm-device {
+            width: auto;
+          }
+
             a {
                 color: $blanco;
                 font-family: $clan;
@@ -183,6 +191,10 @@
     @include sm-device {
         min-height: 17.8rem;
         padding-bottom: 0;
+
+        button {
+          margin-left: auto;
+        }
     }
 
     hr {
@@ -196,6 +208,17 @@
         display: none;
 
         .navbar-nav {
+
+          @include xxs-device {
+            margin-left: 0;
+          }
+
+          @include  sm-device {
+            margin-left: 18.5rem;
+          }
+
+
+
             li {
                 &:first-child {
                     display: none;

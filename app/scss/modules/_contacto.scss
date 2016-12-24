@@ -1,0 +1,61 @@
+.section--contacto {
+    background: $marron-background url('../images/backgrounds/selva-bg.png') no-repeat center;
+
+    &__contact-info {
+      ul {
+        li {
+            color: $verde-claro;
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+      }
+    }
+
+    &__formulario {
+      label {
+        color: $verde-claro;
+
+        .form-control {
+          border: 1px solid $verde-dark;
+          border-radius: 3px;
+          box-shadow: none;
+        }
+      }
+    }
+
+    &__image {
+      border: 1px solid rgba(255, 255, 255, .42);
+      border-radius: .5rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .45);
+      margin-bottom: 3rem;
+      overflow: hidden;
+
+      @include xxs-device {
+        margin-top: 0;
+      }
+
+      @include sm-device {
+        margin-top: 3rem;
+      }
+    }
+
+    &__texto {
+
+      @include xxs-device {
+        margin-top: 0;
+      }
+
+      @include sm-device {
+        margin-top: 3rem;
+      }
+
+
+    }
+
+    h3 {
+        color: $verde;
+        font-family: $clan;
+        font-size: 2rem;
+        font-style: italic;
+    }
+}

@@ -64,6 +64,10 @@ body {
   }
 }
 
+.site-branding {
+  display: none;
+}
+
 .navbar {
   background: #2e2208 url("../images/backgrounds/HeaderBG.png") no-repeat center center;
   border: 0;
@@ -127,6 +131,18 @@ body {
 @media only screen and (min-width: 769px) {
   .navbar-brand-logo {
     max-height: none;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .navbar-nav li {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar-nav li {
+    width: auto;
   }
 }
 
@@ -272,6 +288,9 @@ body {
     min-height: 17.8rem;
     padding-bottom: 0;
   }
+  #navbar-primary button {
+    margin-left: auto;
+  }
 }
 
 #navbar-primary hr {
@@ -288,6 +307,21 @@ body {
   #navbar-secondary {
     display: none;
   }
+}
+
+@media only screen and (min-width: 320px) and (min-width: 320px) {
+  #navbar-secondary .navbar-nav {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (min-width: 769px) {
+  #navbar-secondary .navbar-nav {
+    margin-left: 18.5rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
   #navbar-secondary .navbar-nav li:first-child {
     display: none;
   }
@@ -327,7 +361,7 @@ body {
 
 @media only screen and (min-width: 769px) {
   .header .video-container {
-    max-height: 72rem;
+    max-height: 40rem;
   }
 }
 
@@ -458,6 +492,9 @@ body {
 
 .section--instalaciones__gallery .portfolio-item {
   margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70rem;
 }
 
 .section--instalaciones__gallery .portfolio-item a {
@@ -629,6 +666,93 @@ body {
   background-size: cover;
 }
 
+.section--programas--card {
+  position: relative;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--programas--card__bora {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--programas--card__bora {
+    height: 120rem;
+  }
+  .section--programas--card__bora button {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .section--programas--card__yaguas {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--programas--card__yaguas {
+    height: 120rem;
+  }
+  .section--programas--card__yaguas button {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .section--programas--card__pilpinthuasi {
+    border-top: 1px solid rgba(79, 90, 35, 0.5);
+    height: auto;
+    margin-top: 3rem;
+    padding-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--programas--card__pilpinthuasi {
+    border-top: 0;
+    height: 149rem;
+    margin-top: 6rem;
+    padding-top: 0;
+  }
+  .section--programas--card__pilpinthuasi button {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .section--programas--card__victoria-regia {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--programas--card__victoria-regia {
+    height: 149rem;
+    margin-top: 6rem;
+  }
+  .section--programas--card__victoria-regia button {
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .section--programas--card__heading {
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -669,6 +793,7 @@ body {
 .section--programas--card__texto {
   color: #cfcfab;
   margin: 0 auto;
+  max-width: 38rem;
   text-align: justify;
 }
 
@@ -681,9 +806,67 @@ body {
   margin-top: 2rem;
 }
 
+.section--contacto {
+  background: #302a1d url("../images/backgrounds/selva-bg.png") no-repeat center;
+}
+
+.section--contacto__contact-info ul li {
+  color: #cfcfab;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.section--contacto__formulario label {
+  color: #cfcfab;
+}
+
+.section--contacto__formulario label .form-control {
+  border: 1px solid #363d18;
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.section--contacto__image {
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  border-radius: .5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 320px) {
+  .section--contacto__image {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--contacto__image {
+    margin-top: 3rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .section--contacto__texto {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .section--contacto__texto {
+    margin-top: 3rem;
+  }
+}
+
+.section--contacto h3 {
+  color: #aec45f;
+  font-family: "Clan", Helvetica, sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
 .footer {
   background: #35360d;
-  padding-bottom: 3rem;
   padding-top: 3rem;
 }
 
@@ -715,7 +898,7 @@ body {
 
 @media only screen and (min-width: 769px) {
   .footer__brand p {
-    text-align: left;
+    text-align: justify;
   }
 }
 
@@ -735,6 +918,7 @@ body {
 
 @media only screen and (min-width: 769px) {
   .footer__contact-info .contact {
+    margin-left: 0;
     padding-left: 3rem;
   }
 }
@@ -796,15 +980,18 @@ body {
   content: '\f095';
 }
 
-.footer a,
+.footer a {
+  color: #929974;
+  text-decoration: none;
+}
+
 .footer p {
   color: #929974;
-  text-align: justify;
-  text-decoration: none;
 }
 
 .footer hr {
   border-color: rgba(146, 153, 116, 0.3);
+  margin: 1.5rem 0;
 }
 
 .footer .icon-list {
@@ -837,6 +1024,11 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.footer .terminos {
+  color: #929974;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (min-width: 320px) {

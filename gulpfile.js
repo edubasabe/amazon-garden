@@ -33,6 +33,7 @@ gulp.task('sass', function() {
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(gulp.dest('./app/css'))
+    // .pipe(gulp.dest('/Applications/MAMP/htdocs/amazon-garden-staging/wp-content/themes/amazon-garden/css'))
     .pipe(browserSync.reload({ stream:true }));
 });
 
@@ -51,6 +52,7 @@ gulp.task('useref', function(){
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
+    // .pipe(gulp.dest('/Applications/MAMP/htdocs/amazon-garden-staging/wp-content/themes/amazon-garden/master'))
     .pipe(gulp.dest('dist'));
 });
 

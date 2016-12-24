@@ -3,6 +3,86 @@
   background-size: cover;
 
   &--card {
+    position: relative;
+
+    &__bora {
+      // border: 1px solid red;
+      @include xxs-device {
+        height: auto;
+      }
+      @include sm-device {
+        height: 120rem;
+
+        button {
+          bottom: 0;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &__yaguas {
+      // border: 1px solid yellow;
+      @include xxs-device {
+        height: auto;
+      }
+      @include sm-device {
+        height: 120rem;
+
+        button {
+          bottom: 0;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &__pilpinthuasi {
+      // border: 1px solid magenta;
+
+      @include xxs-device {
+        border-top: 1px solid rgba($verde-obscuro, .5);
+        height: auto;
+        margin-top: 3rem;
+        padding-top: 5rem;
+      }
+      @include sm-device {
+        border-top: 0;
+        height: 149rem;
+        margin-top: 6rem;
+        padding-top: 0;
+
+        button {
+          bottom: 0;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    &__victoria-regia {
+      // border: 1px solid cyan;
+
+      @include xxs-device {
+        height: auto;
+      }
+      @include sm-device {
+        height: 149rem;
+        margin-top: 6rem;
+
+        button {
+          bottom: 0;
+          left: 50%;
+          position: absolute;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+
 
     &__heading {
       margin: 0 auto;
@@ -46,7 +126,7 @@
     &__texto {
       color: $verde-claro;
       margin: 0 auto;
-      // max-width: 38rem;
+      max-width: 38rem;
       text-align: justify;
 
       strong {
