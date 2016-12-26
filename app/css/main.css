@@ -596,11 +596,11 @@ body {
 }
 
 .owl-carousel .owl-dot span {
-  background: #4f5a23 !important;
+  background: rgba(255, 255, 255, 0.3) !important;
 }
 
 .owl-carousel .owl-dot.active span {
-  background: #aec45f !important;
+  background: #fff !important;
 }
 
 .section--quienes-somos {
@@ -720,7 +720,7 @@ body {
 @media only screen and (min-width: 769px) {
   .section--programas--card__pilpinthuasi {
     border-top: 0;
-    height: 149rem;
+    height: 160rem;
     margin-top: 6rem;
     padding-top: 0;
   }
@@ -1013,9 +1013,10 @@ body {
 .footer .icon-list li {
   border: 1px solid #929974;
   border-radius: 3rem;
-  height: 4rem;
+  height: 5rem;
+  margin-left: 2rem;
   position: relative;
-  width: 4rem;
+  width: 5rem;
 }
 
 .footer .icon-list a {
